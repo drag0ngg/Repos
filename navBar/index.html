@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Adaptive Site</title>
+</head>
+<body>
+  <nav id="navbar">
+    <button onclick="HideBar()" id="HideBar" class="sbtn" >X</button>
+  </nav>
+  <button onclick="SideBar()" id="SideBa" class="btn" >☰</button>
+</body>
+<script>
+  function SideBar() {
+    document.getElementById("SideBa").style.marginLeft = ("0px")
+    document.getElementById("navbar").style.width = ("300px")
+    document.getElementById("navbar").style.height = ("100vh")
+    document.getElementById("HideBar").style.height = ("40px")
+    document.getElementById("HideBar").style.width = ("40px")
+    document.getElementById("HideBar").style.display = ("block")
+
+  }
+</script>
+<script>
+  function HideBar() {
+    document.getElementById("SideBa").style.marginLeft = ("0px")
+    document.getElementById("navbar").style.width = ("0px")
+    document.getElementById("navbar").style.height = ("100vh")
+    document.getElementById("HideBar").style.height = ("40px")
+    document.getElementById("HideBar").style.width = ("40px")
+    document.getElementById("HideBar").style.display = ("block")
+  }
+</script>
+</html>
