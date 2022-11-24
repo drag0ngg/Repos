@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="bod">
+  <button id="btnblue" onclick="Col()" class="btnb"></button>
+  <button id="btnred" onclick="Col2()" class="btnr"></button>
+  <br>
+  <button id="btngreen" onclick="Col3()" class="btng"></button>
+  <button id="btnorange" onclick="Col4()" class="btno"></button>
+</body>
+<script>
+  function Col() {
+    document.getElementById("bod").style.backgroundColor = "blue"
+  }
+  function Col2() {
+    document.getElementById("bod").style.backgroundColor = "red"
+  }
+  function Col3() {
+    document.getElementById("bod").style.backgroundColor = "green"
+  }
+  function Col4() {
+    document.getElementById("bod").style.backgroundColor = "orange"
+  }
+</script>
+</html>
