@@ -1,0 +1,153 @@
+html {
+  font-family: sans-serif;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background: linear-gradient(to right, rgb(222, 183, 183), rgb(87, 87, 191));
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.login-container {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  width: 120px;
+}
+
+
+
+.login-card {
+  margin-top: 200px;
+  background: rgba(255, 255, 255, .3);
+  height: 550px;
+  width: 400px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 12px;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px 0 rgba(0,0,0,0.2);
+}
+
+.under-logo {
+  letter-spacing: 3px;
+  text-align: center;
+  margin-bottom: 16px;
+  font-size: 23px;
+  color: black;
+}
+
+.login-enter {
+  margin-bottom: 17px;
+
+}
+
+.login-mail {
+  box-shadow: 0 5px 15px 0 rgba(0,0,0,0.1);
+  margin-top: 5px;
+  background: rgba(255, 255, 255, .2);
+  border-radius: 6px;
+  border: none;
+  height: 43px;
+  width: 260px;
+  outline: none;
+  padding-left: 16px;
+  font-size: 19px;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.login-mail:hover, :focus {
+  background: rgba(255, 255, 255, .8);
+}
+  
+.login-text {
+  letter-spacing: 3px;
+  text-align: justify;
+  margin-left: 70px;
+  margin-bottom: 2px;
+}
+
+.checkbox {
+  display: flex;
+  position: relative;
+  left: 66px;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(14, 0, 83);
+}
+
+.forgot {
+  font-size: 13px;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
+
+.brands {
+  display: flex;
+  gap: 17px;
+  align-items: center;
+  justify-content: center;
+}
+.brand {
+  transition: .2s;
+  padding: 4px;
+  color: rgba(0, 0, 0, 0.5);
+  background: rgba(255, 255, 255, .2);
+  border-radius: 6px;
+  height: 37px;
+  width: 37px;
+  box-shadow: 0 5px 15px 0 rgba(0,0,0,0.2);
+}
+
+.btn {
+  background: rgba(255, 255, 255, .4);
+  width: 80px;
+  height: 33px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 25px;
+  box-shadow: 0 5px 15px 0 rgba(0,0,0,0.1);
+  transition: .3s;
+  letter-spacing: 2px;
+  font-size: 15px;
+}
+
+.btn:hover {
+  box-shadow: 0 0 4px 1px rgba(0,0,0,0.4);
+}
+
+.brand:hover {
+  box-shadow: 0 0 4px 1px rgba(0,0,0,0.4);
+}
