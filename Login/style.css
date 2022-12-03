@@ -12,7 +12,7 @@ body {
   align-items: center;
   justify-content: center;
   display: flex;
-  background: linear-gradient(to right, rgb(222, 183, 183), rgb(87, 87, 191));
+  background: linear-gradient(#584a53, #8c7777);
 }
 
 body, h1, h2, h3, h4, h5, h6, p, ol, ul {
@@ -31,6 +31,7 @@ img {
 }
 
 .login-container {
+  height: 100vh;
   align-items: center;
   justify-content: center;
   display: flex;
@@ -44,7 +45,6 @@ img {
 
 
 .login-card {
-  margin-top: 200px;
   background: rgba(255, 255, 255, .3);
   height: 550px;
   width: 400px;
@@ -98,7 +98,8 @@ img {
 .checkbox {
   display: flex;
   position: relative;
-  left: 66px;
+  left: 73px;
+  line-height: 19px;
   margin-bottom: 20px;
   gap: 10px;
 }
@@ -132,7 +133,7 @@ a {
 }
 
 .btn {
-  background: rgba(255, 255, 255, .4);
+  background: rgba(255, 255, 255, .2);
   width: 80px;
   height: 33px;
   border: none;
@@ -146,8 +147,44 @@ a {
 
 .btn:hover {
   box-shadow: 0 0 4px 1px rgba(0,0,0,0.4);
+  background: rgba(255, 255, 255, .8);
 }
 
 .brand:hover {
+  background: rgba(255, 255, 255, .4);
   box-shadow: 0 0 4px 1px rgba(0,0,0,0.4);
+}
+
+.input-icons {
+  position: absolute;
+}
+
+.tabler-mail {
+  color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  left: 297px;
+  top: 34px;
+}
+
+.tabler-lock {
+  transition: .5s;
+  color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  left: 297px;
+  top: 119px;
+}
+
+#MoveLeft {
+  transition: 2s;
+}
+
+.Front {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  opacity: 0;
+}
+
+#FrontOnly {
+  transition: 6s;
 }
