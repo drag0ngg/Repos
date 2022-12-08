@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/scrollreveal"></script>
   <title>Document</title>
 </head>
 <body>
@@ -40,10 +41,10 @@
     <div class="main-images">
       <img src="https://i0.wp.com/justfreshkicks.com/wp-content/uploads/2019/02/Travis-Scott-Air-Jordan-1.jpg?ssl=1" class="main-img" alt="img">
       <div class="other-images">
-        <img src="https://i0.wp.com/justfreshkicks.com/wp-content/uploads/2019/02/Travis-Scott-Air-Jordan-1.jpg?ssl=1" class="other-img" alt="img">
-        <img src="https://i0.wp.com/justfreshkicks.com/wp-content/uploads/2019/02/Travis-Scott-Air-Jordan-1.jpg?ssl=1" class="other-img" alt="img">
-        <img src="https://i0.wp.com/justfreshkicks.com/wp-content/uploads/2019/02/Travis-Scott-Air-Jordan-1.jpg?ssl=1" class="other-img" alt="img">
-        <img src="https://i0.wp.com/justfreshkicks.com/wp-content/uploads/2019/02/Travis-Scott-Air-Jordan-1.jpg?ssl=1" class="other-img" alt="img">
+        <img src="https://i0.wp.com/justfreshkicks.com/wp-content/uploads/2019/02/Travis-Scott-Air-Jordan-1.jpg?ssl=1" class="other-img1" alt="img">
+        <img src="https://i0.wp.com/justfreshkicks.com/wp-content/uploads/2019/02/Travis-Scott-Air-Jordan-1.jpg?ssl=1" class="other-img2" alt="img">
+        <img src="https://i0.wp.com/justfreshkicks.com/wp-content/uploads/2019/02/Travis-Scott-Air-Jordan-1.jpg?ssl=1" class="other-img3" alt="img">
+        <img src="https://i0.wp.com/justfreshkicks.com/wp-content/uploads/2019/02/Travis-Scott-Air-Jordan-1.jpg?ssl=1" class="other-img4" alt="img">
       </div>
     </div>
     <div class="main-caption">
@@ -71,6 +72,10 @@
       </div>
     </div>
   </div>
+  <div class="second-content">
+    <h2 class="second-company">sneaker company</h2>
+    <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi similique cum aliquam assumenda corrupti laboriosam, dolore ipsa dicta explicabo non harum molestias aliquid fuga optio sit doloribus. Possimus quis iste voluptatum deserunt debitis inventore, voluptas assumenda repellendus eveniet animi molestias fugit dolorem eius nihil? Dignissimos tenetur vel magnam nulla nihil!</p>
+  </div>
 </body>
 <script>
   var clicks = 0;
@@ -87,5 +92,32 @@
       document.getElementById("clicks").innerHTML = clicks;
     }
 }
+
+ScrollReveal().reveal('.main-caption');
+
+ScrollReveal({
+  reset: false,
+  distance: '60px',
+  duration: 2500,
+  delay: 400
+});
+
+ScrollReveal().reveal('.company', { delay: 400, origin: 'top' });
+ScrollReveal().reveal('.thing-name', { delay: 100, origin: 'top' });
+ScrollReveal().reveal('.thing-description', { delay: 300, origin: 'top' });
+ScrollReveal().reveal('.price', { delay: 900, origin: 'top' });
+ScrollReveal().reveal('.discount', { delay: 600, origin: 'bottom' });
+ScrollReveal().reveal('.last-price', { delay: 700, origin: 'right' });
+ScrollReveal().reveal('.minus', { delay: 100, origin: 'right' });
+ScrollReveal().reveal('.plus', { delay: 100, origin: 'left' });
+ScrollReveal().reveal('.main-img', { delay: 100, origin: 'left' });
+ScrollReveal().reveal('.other-img1', { delay: 200, origin: 'bottom' });
+ScrollReveal().reveal('.other-img2', { delay: 300, origin: 'bottom' });
+ScrollReveal().reveal('.other-img3', { delay: 400, origin: 'bottom' });
+ScrollReveal().reveal('.other-img4', { delay: 500, origin: 'bottom' });
+ScrollReveal().reveal('.count', { delay: 500, origin: 'bottom' });
+ScrollReveal().reveal('.second-company', { delay: 100, origin: 'top' });
+ScrollReveal().reveal('.add', { delay: 500, origin: 'right' });
+ScrollReveal().reveal('.about', { delay: 200, origin: 'bottom' });
 </script>
 </html>
